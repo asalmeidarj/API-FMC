@@ -54,6 +54,46 @@ module.exports = {
 };
 ```
 
+### Utilização de alias customizado com Typescript
+
+6 - No arquivo tsconfig.json inclua as seguintes configurações:
+
+```
+    "target": "esnext",
++     "baseUrl": ".",
++     "paths": {
++       "*": ["src/*"],
++       "tests": ["tests/*"],
++       "@components/*": ["src/components/*"],
++     },
+    }
+```
+
+7 - Adicione babel-plugin-module-resolver
+
+```
+npm install --save-dev babel-plugin-module-resolver
+```
+
+8 - No arquivo bable.config.ts inclua as seguintes configurações
+
+```
+{
+  plugins: [
++    [
++       'module-resolver',
++       {
++         root: ['./src'],
++         extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json'],
++         alias: {
++           tests: ['./tests/'],
++           "@components": "./src/components",
++         }
++       }
++    ]
+  ]
+}
+```
 
 
 
