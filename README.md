@@ -1,7 +1,7 @@
 # API-FMC
 API Firebase Cloud Messaging
 
-## Preparação do ambiente
+## Preparação do ambiente (mobile)
 
 1 - No terminal dentro do diretório que criará o projeto
 
@@ -9,7 +9,7 @@ API Firebase Cloud Messaging
 npx create-expo-app <nomeDoProjeto>
 ```
 
-## Configuração do Typescript
+### Configuração do Typescript
 
 2 - No terminal dentro do diretório do projeto utilize o comando
 
