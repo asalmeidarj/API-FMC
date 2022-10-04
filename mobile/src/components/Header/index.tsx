@@ -8,13 +8,12 @@ export function Header() {
         <View></View>
         <View style={styles.navigation}>
             <View>
-                <Text style={styles.itemNavigation}> Novas Notificações </Text>
+                <Text style={styles.itemNavigationActive}> Novas Notificações </Text>
             </View>
             <View>
                 <Text style={styles.itemNavigation}> Todas </Text>
             </View>
         </View>
-        <Text>Header</Text>
     </View>
   );
 }

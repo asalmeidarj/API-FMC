@@ -3,10 +3,9 @@ import { THEME } from 'theme';
 
 export const styles = StyleSheet.create({
   container: {
-    position: 'absolute',
-    top: 0,
     width: '100%',
     height: '20%',
+    marginBottom: 24,
     backgroundColor: THEME.COLORS.BACKGROUND_800
   },
   navigation: {
