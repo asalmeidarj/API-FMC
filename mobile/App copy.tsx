@@ -4,9 +4,7 @@ import { HomeScreen } from 'screens/HomeScreen';
 
 import 'expo-dev-client';
 
-import { Routes } from 'routes';
-
-import { Loading } from 'components/Loading';
+import AppLoading from 'expo-app-loading';
 
 import {
   useFonts,
@@ -48,7 +46,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Routes /> : <Loading />}
+      {fontsLoaded ? <HomeScreen /> : <AppLoading />}
     </Background>
   );
 }
